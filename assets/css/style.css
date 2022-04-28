@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inconsolata', monospace;
+}
+
+p {
+  font-size: 20px;
+}
+
+.w-top {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.menus {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-col {
+  padding: 20px;
+  text-align: center;
+  margin: 5px 10px;
+}
+
+.w-col a:hover {
+  color: black;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.btn {
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.banner-wrap {
+  background-image: url('../images/coffeehouse.jpg');
+  filter: grayscale(50%);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-wrap .banner {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-wrap .banner h1 {
+  font-size: 80px;
+  color: #ffffff;
+}
+
+.banner-text {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  align-items: end;
+}
+
+.banner-text .schedule {
+  margin-left: 20px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+.banner-text .location {
+  margin-right: 20px;
+  color: white;
+}
+
+.container {
+  width: 40%;
+  margin: auto;
+  padding: 70px 0;
+}
+
+section.about-section h2, section.menu-section h2, section.where-section h2 {
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  margin: auto;
+  width: fit-content;
+}
+
+section.about-section .content, section.menu-section, section.where-section {
+  margin-top: 70px;
+}
+
+section.about-section .content .special-content {
+  border-left: 6px solid #d3cece;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+section.about-section .content .special-content .italic {
+  font-style: italic;
+}
+
+section.about-section img.coffee-shop {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.box-wrapper {
+  margin-top: 50px;
+}
+
+.box-wrapper .box-header, .box-wrapper .box-content, .col-header, .col-content {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.box-wrapper .box-header {
+  padding: 15px;
+}
+
+.box-wrapper .box-content {
+  padding: 0 10px 15px;
+}
+
+.box-wrapper .box-content p {
+  color: #938f8f;
+  margin-top: 20px;
+}
+
+.box-wrapper .box-content h3 {
+  padding-top: 30px;
+}
+
+.box-wrapper .box-header h3 {
+  background-color: gray;
+  color: white;
+  padding: 5px;
+  width: 50%;
+  text-align: center;
+}
+
+.two-column {
+  display: flex;
+  margin-top: 20px;
+}
+
+.col-header, .col-content {
+  width: 50%;
+}
+
+.col-header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/coffee_bg.webp');
+}
+
+.col-header h3 {
+  font-size: 60px;
+  background-color: #64401a;
+  color: white;
+  padding: 5px 20px;
+}
+
+.col-content {
+  padding: 20px;
+  background-color: #e3b784;
+}
+
+.col-content h3 {
+  margin-top: 20px;
+}
+
+.col-content p {
+  margin-top: 10px;
+  color: #0b3406;
+}
+
+.menu-img {
+  margin-top: 20px;
+}
+
+.menu-img img {
+  border-radius: 60px;
+}
+
+section.where-section .where-content {
+  margin-top: 50px;
+}
+
+section.where-section .where-content img {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  filter: grayscale(50%);
+}
+
+.where-content .highlight {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px;
+}
+
+section.where-section form {
+  margin-top: 20px;
+}
+
+section.where-section form .form-control {
+  width: 100%;
+  padding: 20px 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  padding: 15px;
+}
+
+.logo .logo-title {
+  text-decoration: none;
+}
+
+.logo .logo-title span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mobile-menus {
+  display: flex;
+  flex-grow: 1;
+}
+
+.mobile-menus .m-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 88px;
+  flex-grow: 1;
+  background-color: black;
+}
+
+.mobile-menus .m-links a {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.mobile-menus .icon {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-grow: 1;
+  padding-right: 10px;
+}
+
+.mobile-menus .m-links {
+  display: none;
+}
+
+.mobile-menus .icon {
+  display: none;
+}
+
+/* MOBILE SIZE */
+@media screen and (max-width: 767px) {
+  .mobile-menus .icon {
+    display: flex;
+  }
+  .menus {
+    display: none;
+  }
+
+  .container {
+    width: 79%;
+    padding: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  section.about-section .content {
+    margin-top: 40px;
+  }
+
+  .two-column {
+    flex-direction: column;
+  }
+
+  .two-column .col-header, .two-column .col-content {
+    width: 100%;
+  }
+
+  .col-header h3 {
+    font-size: 30px;
+  }
+
+  section.where-section form .form-control {
+    padding: 10px;
+    margin-bottom: 25px;
+  }
+
+  .box-wrapper .box-content h3 {
+    padding-top: 20px;
+  }
+
+  .btn-primary {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+}
+
+/* TABLET SIZE */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 93%;
+  }
+}
+
+/* LAPTOP SIZE */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    width: 60%;
+  }
+}
